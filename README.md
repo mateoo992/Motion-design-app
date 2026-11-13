@@ -52,7 +52,7 @@ Pour l’héberger gratuitement : dépose `dist/` sur Netlify, Vercel, Cloudflar
 
 Le workflow `.github/workflows/deploy.yml` build l’app et la publie en HTTPS à chaque push sur `main` :
 
-**https://mateoo992.github.io/motion-design-app/**
+**https://mateoo992.github.io/Motion-design-app/**
 
 À faire une seule fois sur GitHub : **Settings › Pages › Build and deployment › Source : GitHub Actions**. Ensuite, chaque modification fusionnée dans `main` est en ligne en une à deux minutes (suivi dans l’onglet **Actions**). Le workflow peut aussi être relancé à la main (**Actions › Déployer sur GitHub Pages › Run workflow**).
 
@@ -63,7 +63,7 @@ Le workflow `.github/workflows/deploy.yml` build l’app et la publie en HTTPS �
 2. Chrome/Edge : icône « Installer » dans la barre d’adresse. Safari : menu **Fichier › Ajouter au Dock**.
 
 ### iPhone (Safari)
-1. Ouvre **https://mateoo992.github.io/motion-design-app/** dans **Safari** (voir « Déploiement automatique »).
+1. Ouvre **https://mateoo992.github.io/Motion-design-app/** dans **Safari** (voir « Déploiement automatique »).
 2. Bouton **Partager** › **Sur l’écran d’accueil** › **Ajouter**.
 3. L’app s’ouvre en plein écran, avec ses données locales sur le téléphone.
 
@@ -150,7 +150,7 @@ scripts/generate-icons.mjs       icônes PNG générées sans dépendance
 
 ## Hypothèses prises
 
-- **Hébergement** : GitHub Pages via GitHub Actions, sur le dépôt `mateoo992/motion-design-app`. La base Vite reste relative (`base: './'`) : elle fonctionne sous `/motion-design-app/`, reste valable si le dépôt est renommé, et c’est aussi ce qu’exige Capacitor pour l’APK. GitHub Pages gratuit demande un dépôt **public** ; la clé API n’est jamais dans le code (elle reste dans le navigateur de chaque appareil).
+- **Hébergement** : GitHub Pages via GitHub Actions, sur le dépôt `mateoo992/Motion-design-app`. La base Vite reste relative (`base: './'`) : elle fonctionne sous `/Motion-design-app/`, reste valable si le dépôt est renommé, et c’est aussi ce qu’exige Capacitor pour l’APK. GitHub Pages gratuit demande un dépôt **public** ; la clé API n’est jamais dans le code (elle reste dans le navigateur de chaque appareil).
 - **Style de l’interface** : police système (avec Figtree si elle est installée) pour rester 100 % hors ligne, sans police téléchargée.
 - **Pas de routeur** : la navigation entre les 5 onglets est un état Zustand ; c’est plus simple et robuste en PWA et dans Capacitor.
 - **Onglet 5** : « Projets » et « Réglages » partagent un onglet avec un sélecteur en haut.
